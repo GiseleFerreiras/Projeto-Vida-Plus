@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultas</title>
+  <link rel="stylesheet" href="../Css/Consultas.css"> 
+</head>
+
+<body>
+<!-- barra de navegação -->
+    <header class="navbar">
+    <div class="logo">
+    <img src="../Imagens/Logotipo1.png" alt="Logo Vida Plus">
+    </div>
+
+    <nav class="menu">
+      <a href="../Pages/Dashboard.html">Dashboard</a>
+      <a href="../Pages/Consultas.html"class="active">Profissionais<a>
+      <a href="../Pages/Teleconsultas.html">Teleconsultoria</a>
+      <a href="../Pages/Perfil.html">Perfil</a>
+    </nav>
+
+    <div class="user">
+      <img src="../Imagens/Perfil.jpg" alt="foto de perfil" class="fotodeperfil">
+      <span>Maria Catarina</span>
+    </div>
+  </header>
+
+  
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    
+    <!-- Barra de busca -->
+    <section class="busca">
+      <input type="text" placeholder="Pesquisar profissional...">
+      <button>🔍</button>
+      <select>
+        <option>Especialidade</option>
+        <option>Cardiologia</option>
+        <option>Pediatria</option>
+        <option>Ortopedia</option>
+        <option>Dermatologia</option>
+      </select>
+    </section>
+
+    <!-- Lista de profissionais -->
+    <section class="profissionais">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="../Imagens/medico1.png" alt="Dr. João Batista">
+        <h3>Dr. João Batista</h3>
+        <p>Cardiologia</p>
+        <button>Ver Perfil</button>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="../Imagens/medico2.png" alt="Dra. Ana Santos">
+        <h3>Dra. Ana Santos</h3>
+        <p>Pediatria</p>
+        <button>Ver Perfil</button>
+      </div>
+      <!-- Card 3 -->
+      <div class="card">
+        <img src="../Imagens/medico3.png" alt="Dr. Ribeiro França">
+        <h3>Dr. Ribeiro França</h3>
+        <p>Ortopedia</p>
+        <button>Ver Perfil</button>
+      </div>
+      <!-- Card 4 -->
+      <div class="card">
+        <img src="../Imagens/medico4.png" alt="Dra. Juliana Feitosa">
+        <h3>Dra. Juliana Feitosa</h3>
+        <p>Dermatologia</p>
+        <button>Ver Perfil</button>
+      </div>
+    </section>
+
+    <!-- Formulário para agendar consultas -->
+    <section class="formulario">
+      <h2>Agendar Consultas</h2>
+      <form>
+        <label>Tipo de Consulta</label>
+        <input type="text" placeholder="Ex: Presencial ou Online">
+
+        <label>Especialidade</label>
+        <input type="text" placeholder="Ex: Cardiologia">
+
+        <label>Profissional</label>
+        <input type="text" placeholder="Nome do médico">
+
+        <label>Data e Horário</label>
+        <input type="datetime-local">
+
+        <button type="submit">Agendar</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

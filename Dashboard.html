@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard - Vida Plus</title>
+  <link rel="stylesheet" href="../Css/Dashboard.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../Imagens/Logotipo1.png" alt="Logo Vida Plus" />
+    </div>
+    <nav class="menu">
+      <a href="../Pages/Dashboard.html">Dashboard</a>
+      <a href="../Pages/Consultas.html">Profissionais</a>
+      <a href="../Pages/Teleconsultas.html">Teleconsultoria</a>
+      <a href="../Pages/Perfil.html">Perfil</a>
+    </nav>
+    <div class="user">
+      <img src="../Imagens/usuario.png" class="fotodeperfil" alt="Foto do perfil" />
+      <!-- Nome removido para não exibir -->
+      <!-- <span id="nomeUsuario">Usuário</span> -->
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <h2>👋 Bem-vindo(a).</h2>
+
+    <!-- Cards principais -->
+    <div class="cards">
+      <div class="card"><strong>Total de Pacientes</strong><p>120</p></div>
+      <div class="card"><strong>Consultas Agendadas</strong><p>45</p></div>
+      <div class="card"><strong>Telemedicinas Ativas</strong><p>10</p></div>
+      <div class="card"><strong>Ocupação de leitos</strong><p>80%</p></div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="graficos">
+      <div class="grafico">
+        <h4>Consultas por dia da semana</h4>
+        <canvas id="graficoConsultas"></canvas>
+      </div>
+      <div class="grafico">
+        <h4>Ocupação de leitos</h4>
+        <canvas id="graficoPizza"></canvas>
+      </div>
+    </div>
+
+    <!-- Pacientes e Receitas -->
+    <div class="graficos iguais">
+      <div class="grafico">
+        <h4>Últimos pacientes cadastrados</h4>
+ <ul class="pacientes-list">
+  <li class="paciente-item">Maria Silva</li>
+  <li class="paciente-item">João Pereira</li>
+  <li class="paciente-item">Ana Souza</li>
+  <li class="paciente-item">Carlos Santos</li>
+  <li class="paciente-item">Beatriz Lima</li>
+</ul>
+
+      </div>
+
+      <div class="grafico">
+        <h4>Receitas mensais</h4>
+        <canvas id="graficoReceitas"></canvas>
+      </div>
+    </div>
+
+    <!-- Nova seção: Satisfação e Comentários -->
+    <div class="graficos iguais">
+      <div class="grafico satisfacao">
+        <h4>Satisfação dos pacientes</h4>
+        <div class="nota-satisfacao">
+          <span class="nota">4.7</span>
+          <span class="estrelas">★★★★☆</span>
+        </div>
+      </div>
+      <div class="grafico comentarios">
+        <h4>Últimos comentários</h4>
+        <p>Atendimento excelente, muito satisfeito com o serviço.</p>
+      </div>
+    </div>
+
+    <div class="botoes">
+  <a href="../Pages/Teleconsultas.html" class="btn-link">Teleconsulta</a>
+  <a href="../Pages/Consultas.html" class="btn-link">Agendar Consulta</a>
+  <a href="" class="btn-link">Relatório Operacional</a>
+  <a href="../Pages/Perfil.html" class="btn-link">Configurações</a>
+</div>
+
+
+  </main>
+
+  <!-- Importação do Chart.js e do arquivo JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../Js/Dashboard.js"></script>
+</body>
+</html>

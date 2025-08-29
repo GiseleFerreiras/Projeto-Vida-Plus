@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Vida Plus</title>
+  <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+  <div class="container">
+    <img src="../Imagens/Logotipo1.png" alt="Logo Vida Plus" class="logo">
+
+    <!-- Título -->
+    <h2>CADASTRO</h2>
+
+    <!-- Formulário de Cadastro -->
+    <form id="formCadastro">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="email" id="email" placeholder="E-mail" required>
+      <input type="text" id="cpf" placeholder="CPF" required maxlength="11" minlength="11">
+      <input type="password" id="senha" placeholder="Senha" required>
+      <input type="password" id="senha2" placeholder="Repita a Senha" required>
+      <button type="submit">CADASTRAR</button>
+    </form>
+  </div>
+
+  <!-- JS externo -->
+  <script src="../js/cadastro.js"></script>
+</body>
+</html>

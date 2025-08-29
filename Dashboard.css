@@ -1,0 +1,174 @@
+/* Reset e fonte base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f8;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.fotodeperfil {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Conteúdo principal */
+main.dashboard {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Cards principais */
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  flex: 1;
+}
+
+/* Contêiner dos gráficos (linha 1) */
+.graficos {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Gráficos em geral */
+.grafico {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+}
+
+.pacientes-list {
+  list-style: none;          /* Remove os marcadores */
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;          /* Scroll se passar do limite */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;                 /* Espaço entre os itens */
+}
+
+.paciente-item {
+  background-color: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: default;
+  transition: background-color 0.3s ease;
+}
+
+.paciente-item:hover {
+  background-color: #e6f0ff; /* Cor suave ao passar o mouse */
+}
+
+
+/* Canvas dos gráficos */
+.grafico canvas {
+  max-width: 250px;
+  max-height: 250px;
+  width: 100%;
+  height: auto;
+}
+
+/* Seções que devem ficar lado a lado */
+.graficos.iguais {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Satisfação dos pacientes */
+.satisfacao .nota-satisfacao {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #1d72e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.satisfacao .estrelas {
+  font-size: 1.5em;
+  color: #f5c518; /* cor amarela */
+}
+
+/* Comentários */
+.comentarios p {
+  background-color: #f5f7fa;
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 15px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-link {
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  background-color: #1d72e8;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #155cc3;
+}

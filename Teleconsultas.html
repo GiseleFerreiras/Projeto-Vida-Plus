@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Teleconsulta</title>
+  <link rel="stylesheet" href="../Css/Teleconsulta.css">
+</head>
+<body>
+<!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="../Imagens/Logotipo1.png" alt="Logo Vida Plus" />
+    </div>
+    <nav class="menu">
+      <a href="../Pages/Dashboard.html">Dashboard</a>
+      <a href="../Pages/Consultas.html">Profissionais</a>
+      <a href="../Pages/Teleconsultas.html">Teleconsultoria</a>
+      <a href="../Pages/Perfil.html">Perfil</a>
+    </nav>
+
+    <div class="user">
+      <img src="../Imagens/usuario.png" alt="foto de perfil" class="fotodeperfil">
+      <span>usuário</span>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <h2>Teleconsultas</h2>
+
+    <!-- Parte superior -->
+    <div class="top-section">
+      <div class="video-box">
+        <img src="../Imagens/Teleconsulta.jpg" alt="Médico" class="video-img">
+        <button class="end-btn">Encerrar</button>
+      </div>
+      <div class="shortcut">
+        <img src="../Imagens/Prontuario1.jpg" alt="Relatório">
+        <p>Seu Prontuário</p>
+      </div>
+      <div class="shortcut">
+        <img src="../Imagens/Medicamentos.jpg" alt="Medicamentos">
+        <p>Medicamentos</p>
+      </div>
+    </div>
+
+    <!-- Consultas e Prontuários -->
+    <div class="info-section">
+      <div class="consultas">
+        <div class="card"><h3>12</h3><p>Total</p></div>
+        <div class="card"><h3>1</h3><p>Atendimento</p></div>
+        <div class="card"><h3>4</h3><p>Agendadas</p></div>
+        <div class="card"><h3>7</h3><p>Realizadas</p></div>
+      </div>
+
+      <div class="prontuarios">
+        <h4>Prontuários Recentes</h4>
+        <ul>
+          <li>Neurologia <span>30 Ago</span></li>
+          <li>Cardiologia <span>31 Ago</span></li>
+          <li>Clínico Geral <span>02 Ago</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gráfico -->
+    <div class="chart-box">
+      <h4>Teleconsultas</h4>
+      <canvas id="teleChart"></canvas>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../Js/Teleconsulta.js"></script>
+</body>
+</html>

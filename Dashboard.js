@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Gráfico de barras - Consultas por dia da semana
+  // Gráfico Consultas por dia da semana
   new Chart(document.getElementById("graficoConsultas"), {
     type: "bar",
     data: {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Gráfico de pizza - Ocupação de leitos
+  // Gráfico Ocupação de leitos
   new Chart(document.getElementById("graficoPizza"), {
     type: "pie",
     data: {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // Gráfico de linha - Receitas mensais
+  // Gráfico Receitas mensais
   new Chart(document.getElementById("graficoReceitas"), {
     type: "line",
     data: {

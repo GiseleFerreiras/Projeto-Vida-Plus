@@ -1,4 +1,3 @@
-/* Reset e fonte base */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -61,7 +60,7 @@ h2 {
   flex: 1;
 }
 
-/* Contêiner dos gráficos (linha 1) */
+/* Contêiner dos gráficos */
 .graficos {
   display: flex;
   gap: 15px;
@@ -103,7 +102,7 @@ h2 {
 }
 
 .paciente-item:hover {
-  background-color: #e6f0ff; /* Cor suave ao passar o mouse */
+  background-color: #e6f0ff; 
 }
 
 
@@ -136,10 +135,9 @@ h2 {
 
 .satisfacao .estrelas {
   font-size: 1.5em;
-  color: #f5c518; /* cor amarela */
+  color: #f5c518; 
 }
 
-/* Comentários */
 .comentarios p {
   background-color: #f5f7fa;
   border-radius: 4px;
@@ -151,7 +149,7 @@ h2 {
 
 .botoes {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 15px;
   margin-top: 20px;
 }

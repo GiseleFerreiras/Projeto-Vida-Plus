@@ -9,8 +9,8 @@
 </head>
 
 <body>
-<!-- barra de navegação -->
-    <header class="navbar">
+
+  <header class="navbar">
     <div class="logo">
     <img src="../Imagens/Logotipo1.png" alt="Logo Vida Plus">
     </div>
@@ -29,11 +29,8 @@
   </header>
 
   
-
-  <!-- Conteúdo principal -->
   <main class="container">
     
-    <!-- Barra de busca -->
     <section class="busca">
       <input type="text" placeholder="Pesquisar profissional...">
       <button>🔍</button>
@@ -46,7 +43,6 @@
       </select>
     </section>
 
-    <!-- Lista de profissionais -->
     <section class="profissionais">
       <!-- Card 1 -->
       <div class="card">
@@ -55,21 +51,21 @@
         <p>Cardiologia</p>
         <button>Ver Perfil</button>
       </div>
-      <!-- Card 2 -->
+
       <div class="card">
         <img src="../Imagens/medica.png" alt="Dra. Ana Santos">
         <h3>Dra. Ana Santos</h3>
         <p>Pediatria</p>
         <button>Ver Perfil</button>
       </div>
-      <!-- Card 3 -->
+
       <div class="card">
         <img src="../Imagens/medico.png" alt="Dr. Ribeiro França">
         <h3>Dr. Ribeiro França</h3>
         <p>Ortopedia</p>
         <button>Ver Perfil</button>
       </div>
-      <!-- Card 4 -->
+
       <div class="card">
         <img src="../Imagens/medica.png" alt="Dra. Juliana Feitosa">
         <h3>Dra. Juliana Feitosa</h3>
@@ -78,12 +74,10 @@
       </div>
     </section>
 
-    <!-- Seção de Agendamento de Consultas com menus interativos -->
 <section class="formulario">
   <h2>Agendar Consultas</h2>
   <form>
 
-    <!-- Tipo de consulta -->
     <label for="tipoConsulta">Tipo de Consulta</label>
     <select id="tipoConsulta" required>
       <option value="">Selecione...</option>
@@ -91,7 +85,6 @@
       <option value="online">Online</option>
     </select>
 
-    <!-- Especialidade médica -->
     <label for="especialidade">Especialidade</label>
     <select id="especialidade" required>
       <option value="">Selecione...</option>
@@ -101,16 +94,16 @@
       <option value="dermatologia">Dermatologia</option>
     </select>
 
-    <!-- Profissional -->
     <label for="profissional">Profissional</label>
     <select id="profissional" required>
       <option value="">Selecione...</option>
-      <option value="maria">Dra. Maria Souza</option>
-      <option value="joao">Dr. João Pereira</option>
-      <option value="ana">Dra. Ana Lima</option>
+      <option value="Juliana">Dra. Juliana Feitosa</option>
+      <option value="joao">Dr. João Batista</option>
+      <option value="ana">Dra. Ana Santos</option>
+      <option value="Ribeiro">Dr. Ribeiro França</option>
+
     </select>
 
-    <!-- Data e horário -->
     <label for="dataHora">Data e Horário</label>
     <input type="datetime-local" id="dataHora" required>
 

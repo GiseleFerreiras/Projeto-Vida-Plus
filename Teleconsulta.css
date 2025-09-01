@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.fotodeperfil {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Seção superior */
+.top-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.video-box {
+  flex: 2;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.video-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.end-btn {
+  background: red;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.shortcut {
+  flex: 1;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img,
+.shortcut img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+/* Consultas e prontuários */
+.info-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.consultas {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  background: #1e88e5;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.prontuarios {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.prontuarios ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prontuarios li {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+/* Gráfico */
+.chart-box {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+canvas {
+  max-height: 250px; /* deixa o gráfico menor */
+}

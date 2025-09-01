@@ -1,4 +1,3 @@
-/* ===== Estilo do corpo da página ===== */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f7fa;
@@ -9,7 +8,7 @@ body {
   margin: 0;
 }
 
-/* ===== Container do login ===== */
+/* Container do login */
 .login-container {
   background: #fff;
   padding: 40px 30px;
@@ -19,28 +18,24 @@ body {
   width: 350px;
 }
 
-/* ===== Título principal do container ===== */
 .login-container h2 {
   margin: 0;
   font-size: 20px;
-  font-weight: normal; /* texto normal, sem negrito */
+  font-weight: normal; 
   color: #222;
 }
 
-/* ===== Slogan ===== */
 .slogan {
   font-size: 14px;
   color: #666;
   margin-bottom: 20px;
 }
 
-/* ===== Logo ou imagem do login ===== */
 .login-container img {
   width: 180px;
   margin-bottom: 5px; /* diminui espaço abaixo da imagem */
 }
 
-/* ===== Subtítulo ou título do formulário ===== */
 .login-title {
   font-size: 18px;
   margin-top: 5px;  /* diminui espaço acima do título */
@@ -49,14 +44,13 @@ body {
   font-weight: normal; /* texto normal, sem negrito */
 }
 
-/* ===== Estilo do formulário ===== */
+/* Estilo do formulário */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* ===== Inputs do formulário ===== */
 form input {
   padding: 12px;
   border: 1px solid #ccc;
@@ -64,7 +58,6 @@ form input {
   font-size: 14px;
 }
 
-/* ===== Botão do formulário ===== */
 form button {
   background-color: #2563eb;
   color: white;
@@ -80,13 +73,12 @@ form button:hover {
   background-color: #1e40af;
 }
 
-/* ===== Mensagem de registro ===== */
+/* Mensagem de registro */
 .register {
   margin-top: 15px;
   font-size: 14px;
 }
 
-/* ===== Link de registro ===== */
 .register a {
   color: #2563eb;
   text-decoration: none;

@@ -1,11 +1,9 @@
-/* Reset básico */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f8f9fa;
 }
 
-/* Barra de navegação */
 .navbar {
   background: #fff;
   display: flex;
